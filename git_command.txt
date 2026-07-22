@@ -1,0 +1,17 @@
+// 推送笔记至远程仓库
+git add .
+git commit -m "更新笔记"
+git push
+
+// 查看提交日志
+git log --oneline
+
+// 查看某次提交的具体改动
+git show <提交ID>
+
+// 软回滚（保留修改）
+git reset --soft HEAD~1
+
+// 硬回滚（丢弃修改）
+git reset --hard <提交ID>    // 回到提交ID所处的版本
+git reset --hard HEAD~1    // 回到上一个版本
